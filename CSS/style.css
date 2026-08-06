@@ -538,8 +538,55 @@
     var(--primary-color)
   );
   overflow: hidden;
-  /*temp*/
-  height: 50rem;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: var(--70-shades-color);
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: var(--90-tints-color);
+  border-radius: 0.9rem;
+  -webkit-border-radius: 0.9rem;
+  -moz-border-radius: 0.9rem;
+  -ms-border-radius: 0.9rem;
+  -o-border-radius: 0.9rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder {
+  color: #aaa;
 }
 
 .cta-img-box {
@@ -553,4 +600,9 @@
 
   background-size: cover;
   background-position: center;
+}
+
+.cta *:focus {
+  outline: none; /*can make it but make an another way to show focus */
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }

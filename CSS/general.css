@@ -160,6 +160,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -179,6 +180,11 @@ body {
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
+
+  /*  Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -224,6 +230,18 @@ body {
   border-bottom: 1px solid transparent;
 }
 
+.btn--form {
+  background-color: var(--70-shades-color);
+  color: var(--90-tints-color);
+  align-self: flex-end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -242,6 +260,15 @@ body {
   width: 3rem;
   height: 3rem;
   color: var(--primary-color);
+}
+
+*:focus {
+  /* outline:none;   */ /* is very bad for accessibility */
+
+  /* outline: 3px solid var(--primary-color);
+  outline-offset: 3px; */
+  outline: none; /*can make it but make an another way to show focus */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* Helper/Settings Classes */
