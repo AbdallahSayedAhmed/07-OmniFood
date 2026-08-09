@@ -73,6 +73,8 @@ Default: 9px or 0.9rem
 
 html {
   font-size: 62.5%;
+  /* Does Not work on Safari */
+  /* scroll-behavior: smooth; */
 }
 
 body {
