@@ -72,6 +72,9 @@ Default: 9px or 0.9rem
 }
 
 html {
+  /* font-size: 10px */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   /* Does Not work on Safari */
   /* scroll-behavior: smooth; */
@@ -134,7 +137,7 @@ body {
   font-weight: 700;
   color: #333;
   /* color: var(--70-shades-color); */
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.05rem;
 }
 
 .heading-primary {
