@@ -16,12 +16,12 @@ const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 ///////////////////////////////////////////////////////////////
 // make mobile navigation work
-// const btnNavEl = document.querySelector(".btn-mobile-nav");
-// const headerEl = document.querySelector(".header");
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
 
-// btnNavEl.addEventListener("click", function () {
-//   headerEl.classList.toggle("nav-open");
-// });
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
 
 ///////////////////////////////////////////////////////////////
 // Smooth scrolling animation
@@ -46,9 +46,9 @@ allLinks.forEach(function (link) {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
-    //close mobile navigation
-    // if (link.classList.contains("main-nav-link"))
-    //   headerEl.classList.toggle("nav-open");
+    // close mobile navigation
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
   });
 });
 ///////////////////////////////////////////////////////////
