@@ -78,6 +78,8 @@ html {
   font-size: 62.5%;
   /* Does Not work on Safari */
   /* scroll-behavior: smooth; */
+
+  overflow-x: hidden;
 }
 
 body {
@@ -85,6 +87,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
 }
 
 /*************************************************/
